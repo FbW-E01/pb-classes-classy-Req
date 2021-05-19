@@ -1,7 +1,7 @@
 # Classy
 
 #### 1. Person Class
-* Create a class called `Person` which accepts the name of a person as a string, and his/her age as a number. The `Person` class should have a method called describe which returns a string with the following syntax: "name, age years old". So, for example, if John is 19 years old, then the function describe of his object will return "John, 19 years old".
+* Create a class called `Person` which accepts the name of a person as a string, and his/her age as a number. The `Person` class should have a method called `describe` which returns a string with the following syntax: "name, age years old". So, for example, if John is 19 years old, then the function describe of his object will return "John, 19 years old".
 
 #### 2. Tick Tock
 Rewrite the following code to use the "class" syntax. 
@@ -31,12 +31,10 @@ Rewrite the following code to use the "class" syntax.
     }
   
     this.stop = function() {
-      clearInterval(timer);
+        // do nothing!
     };
-  
     this.start = function() {
       render();
-      timer = setInterval(render, 1000);
     };
 
   }
