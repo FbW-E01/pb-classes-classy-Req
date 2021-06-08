@@ -1,8 +1,11 @@
 // 1. Person calss
 const Person = class {
-  constructor(name, age) {
+  constructor(name, age, email) {
     this.name = name;
     this.age = age;
+
+    // validate email here
+    this.email = email;
   }
 
   describe() {
@@ -10,7 +13,7 @@ const Person = class {
   }
 }
 
-const user = new Person("John", 19);
+const user = new Person("John", 19, "joel@john.com");
 console.log(user.describe());
 
 // 2. Tick tock
